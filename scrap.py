@@ -42,10 +42,15 @@ page = urls[0]
 print page
 page = urllib2.urlopen(page)
 soup = BeautifulSoup(page, 'html.parser')
+
 plaintext = soup.get_text()
 fp=codecs.open('delete.txt', 'w',encoding="utf-8")
 fp.write(plaintext)
+fp.close()
+with open('delete.txt', 'r') as myfile:
+	data=myfile.read().replace('\n', '')
+
 #trying to get annotate working, pipeline1
-annotext = client.annotate(text=plaintext, properties=props1)
-print(annotext)
+	annotext = client.annotate(text=data, properties=props1)
+	print(annotext)
 
