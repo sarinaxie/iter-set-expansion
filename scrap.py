@@ -25,7 +25,6 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 nlp_path = os.path.join(dir_path, "stanford-corenlp-full-2017-06-09")
 print(nlp_path)
 client = NLPCoreClient(nlp_path)
-#client = NLPCoreClient('/path/to/stanford-corenlp-full-2017-06-09')
 props1 = {
         "annotators": "tokenize,ssplit,pos,lemma,ner",
         "ner.useSUTime": "0"
