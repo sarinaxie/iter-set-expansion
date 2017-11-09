@@ -7,6 +7,7 @@ import bs4
 from bs4 import BeautifulSoup
 import re
 import operator
+from operator import itemgetter
 from collections import defaultdict
 
 def sendQuery(service, q):
@@ -46,9 +47,9 @@ print("running, wait a long while")
 print("iteration 1")
 res = sendQuery(service, q)
 itercount = 0
-relcount = 0
 seenURLS = []
-while relcount < k:
+relationList = []
+while len(relationList) < k:
         urls = []
         for page in res['items']:
                 url = page['link']
@@ -57,10 +58,11 @@ while relcount < k:
                         print type(url)
                         urls.append(url)
                         urls.append(seenURLS)
+        
+        tempRelList = []
         sentList = []
-        relationList = []
         #urls = ['https://en.wikipedia.org/wiki/Bill_Gates', 'https://twitter.com/billgates', 'https://www.biography.com/people/bill-gates-9307520', 'https://www.gatesnotes.com/', 'https://www.forbes.com/profile/bill-gates/', 'https://www.youtube.com/watch?v=XS6ysDFTbLU', 'https://www.facebook.com/BillGates/', 'https://www.theverge.com/2017/9/26/16365424/bill-gates-android-phone-switch', 'https://www.theatlantic.com/magazine/archive/2015/11/we-need-an-energy-miracle/407881/', 'https://qz.com/911968/bill-gates-the-robot-that-takes-your-job-should-pay-taxes/https://news.microsoft.com/exec/bill-gates/', 'https://en.wikipedia.org/wiki/Bill_Gates', 'www.telegraph.co.uk/technology/0/bill-gates/', 'https://www.theverge.com/.../bill-gates-microsoft-shares-sale-2017', 'https://www.biography.com/people/bill-gates-9307520', 'https://www.youtube.com/watch?v=rOqMawDj0LQ', 'https://qz.com/.../bill-gates-will-have-no-microsoft-msft-shares-by-mid-2019- at-his-current-rate/', 'https://www.bizjournals.com/.../microsoft-s-bill-gates-buys-huge-swath-of- arizona.html', 'https://www.cnbc.com/.../bill-gates-microsoft-ceo-satya-nadella-talk-about- leadership.html', 'https://twitter.com/billgates']
-        urls = ['https://www.biography.com/people/bill-gates-9307520', 'http://www.telegraph.co.uk/technology/0/bill-gates/']
+        urls = ['https://www.biography.com/people/bill-gates-9307520']
         for pg in urls:
                 page = urllib2.urlopen(pg)
                 soup = bs4.BeautifulSoup(page, 'html.parser')
@@ -124,38 +126,40 @@ while relcount < k:
                                                 # print(relation.entities[0].type)
                                                 # print(relation.entities[0].value)
                                                 relationList.append(temp)
-                                                sentList.append(sentence)
+                                                tempRelList.append(temp)
+                                                for x in sentence.tokens:
+                                                        newsentence += " " + x.word
+                                                sentList.append(newsentence.encode("utf-8"))
                                                 print("Success!")
                 print "done with pipeline2"
 
         print("===================== ALL RELATIONS =====================")
-        #removing duplicates from tuples list
+        #print all tuples from this set of urls
+        if len(tempRelList) != 0:
+                tempRelList = sorted(tempRelList, key=itemgetter(0))
+        for i in range(0, len(tempRelList)):
+                rList = tempRelList[i]
+                print "Sentence: ", sentList[i]
+                lineString = ("Relation type: " + setRelation + " | Confidence: " + rList[0] +
+                                " | Entity #1: " + rList[1] + " (" + rList[2] + ") " +
+                                " | Entity #2: " + rList[3] + " (" + rList[4] + ") ")
+                print(lineString)
+        
+        #set duplicates in tuples list to [], then remove all instances of [] from the list
         D = defaultdict(list)
         for i,item in enumerate(relationList):
                 tuprepresentation = item[1]+item[3]
                 D[tuprepresentation].append(i)
-        #keys are items, values are the indices of the items in relationList
+        #keys are tuples, values are the indices of the tuples in relationList
         D = {k:v for k,v in D.items() if len(v)>1}
-        for rList,indices in D:
+        for tup,indices in D.iteritems():
                 if relationList[indices[0]][0] > relationList[indices[1]][0]:
                         relationList[indices[1]] = []
                 else:
                         relationList[indices[0]] = []
+        relationList = [x for x in relationList if x != []]
 
-        #if k tuples found, print them out, we will not loop again
-        #if k tuples not found, do not print yet, we have to loop again
-
-        #print all tuples, Prof Gravano says that's ok
-        for i in len(relationList):
-                rList = relationList[i]
-                if len(rList) != 0:
-                        print "Sentence: " + sentList[i]
-                        lineString = ("Relation type: " + setRelation + " | Confidence: " + rList[0] +
-                                        " | Entity #1: " + rList[1] + " (" + rList[2] + ") " +
-                                        " | Entity #2: " + rList[3] + " (" + rList[4] + ") ")
-                        print(lineString)
-        relcount += len(relationList)
-        if relcount < k:
+        if len(relationList) < k:
                 if len(relationList) == 0:
                         break   #too many iterations have gone by, we've used up all our tuples
                 maxx = 0
@@ -168,4 +172,4 @@ while relcount < k:
                 res = sendQuery(service, querytup)
 
                 itercount += 1
-                print "iteration " + ctr
+                print "iteration ", itercount
