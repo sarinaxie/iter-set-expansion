@@ -11,10 +11,27 @@ import operator
 from operator import itemgetter
 from collections import defaultdict
 
+#PARAMETERS
+clientKey = sys.argv[1]
+engineKey = sys.argv[2]
+r = int(sys.argv[3])
+threshold = float(sys.argv[4])
+q = sys.argv[5]
+k = int(sys.argv[6])
+
+reldict = {1: "Live_In", 2: "Located_In", 3: "OrgBased_In", 4: "Work_For"}
+print("Parameters:")
+print("Client Key	= " + clientKey)
+print("Engine Key	= " + engineKey)
+print("Relation 	= " + reldict[int(r)])
+print("Threshhold	= " + str(threshold))
+print("Query 		= " + q)
+print("# of Tuples	= " + str(k))  
+
 def sendQuery(service, q):
         res = service.cse().list(
                 q=q,
-                cx='007382945159574133954:avqdfgjg420',
+                cx=engineKey,
                 ).execute()
         return res
 
@@ -34,39 +51,42 @@ p2props = {
         "ner.useSUTime": "0"
         }
 
-service = build("customsearch", "v1", developerKey="AIzaSyBbGfil_xv2ICSW4xjT5RYY92l96nahFEs")
+service = build("customsearch", "v1", developerKey=clientKey)
 entdict = {1: ["PERSON", "LOCATION"], 2: ["LOCATION", "LOCATION"], 3: ["LOCATION", "ORGANIZATION"], 4: ["PERSON", "ORGANIZATION"]}
-reldict = {1: "Live_In", 2: "Located_In", 3: "OrgBased_In", 4: "Work_For"}
 # r = sys.argv[1]
 # threshold = sys.argv[2]
 # q = sys.argv[3]
 # k = sys.argv[4]
-r = 4
+#r = 4
 setRelation = reldict[r]
-threshold = .35
-q = "bill gates microsoft"
-k = 10
+#threshold = .35
+#q = "bill gates microsoft"
+#k = 10
 
-print("running, wait a long while")
-print("iteration 1")
+print("Loading, please wait.")
 res = sendQuery(service, q)
 itercount = 0
 seenURLS = []
 relationList = []
+iterationCount = 0
 while len(relationList) < k:
-        urls = []
+	iterationCount += 1
+	totalRCount = 0
+	print("========== Iteration: " + str(iterationCount) + " - Query: " + q + "==========")
+	urls = []
         for page in res['items']:
                 url = page['link']
                 if url not in seenURLS and "..." not in url:
                         urls.append(url)
-                        urls.append(seenURLS)
+                        seenURLS.append(url)
         
         tempRelList = []
         sentList = []
         #urls = ['https://www.biography.com/people/bill-gates-9307520']
         for pg in urls:
                 if type(pg) != list:
-                        page = urllib2.urlopen(pg)
+                        print("Processing: " + pg)
+			page = urllib2.urlopen(pg)
                         soup = bs4.BeautifulSoup(page, 'html.parser')
                         page.close()
                         plaintext = ""
@@ -104,8 +124,11 @@ while len(relationList) < k:
                                         newsentence = ""
 
                         print "done with pipeline1"
+		else:
+			print "Unable to process webpage, moving to next page"
 
                 ''' PIPELINE 2 '''
+		siteRCount = 0
                 doc = client.annotate(text=p2sents, properties=p2props)
                 #print(doc.sentences[0].relations[0])
                 for sentence in doc.sentences:
@@ -118,7 +141,9 @@ while len(relationList) < k:
                                         #print(float(currentProb) >= float(threshold))
                                         #check to see if prob is above threshold
                                         if(float(currentProb) >= threshold):
-                                                temp = []
+                                                siteRCount += 1
+						totalRCount += 1
+						temp = []
                                                 temp.append(currentProb)
                                                 temp.append(relation.entities[0].value)
                                                 temp.append(relation.entities[0].type)
@@ -133,9 +158,15 @@ while len(relationList) < k:
                                                 for x in sentence.tokens:
                                                         newsentence += " " + x.word
                                                 sentList.append(newsentence.encode("utf-8"))
+                                                print("========== EXTRACTED RELATION ==========")
+						print("Sentence: " + newsentence)
+						
+                				lineString = ("Relation type: " + setRelation + " | Confidence: " + currentProb +
+                                				" | Entity #1: " + temp[0] + " (" + temp[1] + ") " +
+                                				" | Entity #2: " + temp[2] + " (" + temp[3] + ") ")
+                				print(lineString)
                                                 newsentence = ""
-                                                print("Success!")
-                print "done with pipeline2"
+                print("Relations extracted from this website: " + str(siteRCount) + "(Overall: " + str(totalRCount) + ")") 
 
         print("===================== ALL RELATIONS =====================")
         #print all tuples from this set of urls
