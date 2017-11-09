@@ -10,7 +10,6 @@ import re
 import operator
 from operator import itemgetter
 from collections import defaultdict
-
 #PARAMETERS
 clientKey = sys.argv[1]
 engineKey = sys.argv[2]
@@ -18,39 +17,34 @@ r = int(sys.argv[3])
 threshold = float(sys.argv[4])
 q = sys.argv[5]
 k = int(sys.argv[6])
-
 reldict = {1: "Live_In", 2: "Located_In", 3: "OrgBased_In", 4: "Work_For"}
 print("Parameters:")
-print("Client Key	= " + clientKey)
-print("Engine Key	= " + engineKey)
-print("Relation 	= " + reldict[int(r)])
-print("Threshhold	= " + str(threshold))
-print("Query 		= " + q)
-print("# of Tuples	= " + str(k))  
-
+print("Client Key       = " + clientKey)
+print("Engine Key       = " + engineKey)
+print("Relation         = " + reldict[int(r)])
+print("Threshhold       = " + str(threshold))
+print("Query            = " + q)
+print("# of Tuples      = " + str(k))
 def sendQuery(service, q):
         res = service.cse().list(
                 q=q,
                 cx=engineKey,
                 ).execute()
         return res
-
 #path to corenlp, pipeline properties, set up search api
 dir_path = os.path.dirname(os.path.realpath(__file__))
 nlp_path = os.path.join(dir_path, "stanford-corenlp-full-2017-06-09")
 client = NLPCoreClient(nlp_path)
-
 p1props = {
         "annotators": "tokenize,ssplit,pos,lemma,ner",
         "parse.model": "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz",
         "ner.useSUTime": "0"
         }
 p2props = {
-        "annotators": "tokenize,ssplit,pos,lemma,ner,parse,relation", 
-        "parse.model": "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz", 
+        "annotators": "tokenize,ssplit,pos,lemma,ner,parse,relation",
+        "parse.model": "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz",
         "ner.useSUTime": "0"
         }
-
 service = build("customsearch", "v1", developerKey=clientKey)
 entdict = {1: ["PERSON", "LOCATION"], 2: ["LOCATION", "LOCATION"], 3: ["LOCATION", "ORGANIZATION"], 4: ["PERSON", "ORGANIZATION"]}
 # r = sys.argv[1]
@@ -62,7 +56,6 @@ setRelation = reldict[r]
 #threshold = .35
 #q = "bill gates microsoft"
 #k = 10
-
 print("Loading, please wait.")
 res = sendQuery(service, q)
 itercount = 0
@@ -70,38 +63,34 @@ seenURLS = []
 relationList = []
 iterationCount = 0
 while len(relationList) < k:
-	iterationCount += 1
-	totalRCount = 0
-	print("========== Iteration: " + str(iterationCount) + " - Query: " + q + "==========")
-	urls = []
+        iterationCount += 1
+        totalRCount = 0
+        print("========== Iteration: " + str(iterationCount) + " - Query: " + q + "==========")
+        urls = []
         for page in res['items']:
                 url = page['link']
                 if url not in seenURLS and "..." not in url:
                         urls.append(url)
                         seenURLS.append(url)
-        
         tempRelList = []
         sentList = []
         #urls = ['https://www.biography.com/people/bill-gates-9307520']
         for pg in urls:
                 if type(pg) != list:
                         print("Processing: " + pg)
-			page = urllib2.urlopen(pg)
+                        page = urllib2.urlopen(pg)
                         soup = bs4.BeautifulSoup(page, 'html.parser')
                         page.close()
                         plaintext = ""
                         for stuff in soup.find_all('p'):
                                 plaintext = plaintext + " " + stuff.get_text()
                         plaintext = plaintext.encode("utf-8")
-
                         sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', plaintext)
                         # counter = 0
                         # for s in sentences:
                         #         if len(s) < 20 or len(s) > 230:
                         #                 del sentences[counter]
                         #         counter += 1
-
-
                         '''PIPELINE 1 '''
                         doc = client.annotate(text=sentences, properties=p1props)
                         #print(doc.sentences[0].tokens[0].ner)
@@ -122,13 +111,12 @@ while len(relationList) < k:
                                                 newsentence += " " + x.word
                                         p2sents.append(newsentence.encode("utf-8"))
                                         newsentence = ""
-
                         print "done with pipeline1"
-		else:
-			print "Unable to process webpage, moving to next page"
+                else:
+                        print "Unable to process webpage, moving to next page"
 
                 ''' PIPELINE 2 '''
-		siteRCount = 0
+                siteRCount = 0
                 doc = client.annotate(text=p2sents, properties=p2props)
                 #print(doc.sentences[0].relations[0])
                 for sentence in doc.sentences:
@@ -142,15 +130,13 @@ while len(relationList) < k:
                                         #check to see if prob is above threshold
                                         if(float(currentProb) >= threshold):
                                                 siteRCount += 1
-						totalRCount += 1
-						temp = []
+                                                totalRCount += 1
+                                                temp = []
                                                 temp.append(currentProb)
                                                 temp.append(relation.entities[0].value)
                                                 temp.append(relation.entities[0].type)
-
                                                 temp.append(relation.entities[1].value)
                                                 temp.append(relation.entities[1].type)
-
                                                 # print(relation.entities[0].type)
                                                 # print(relation.entities[0].value)
                                                 relationList.append(temp)
@@ -159,16 +145,13 @@ while len(relationList) < k:
                                                         newsentence += " " + x.word
                                                 sentList.append(newsentence.encode("utf-8"))
                                                 print("========== EXTRACTED RELATION ==========")
-						print("Sentence: " + newsentence)
-						
-                				lineString = ("Relation type: " + setRelation + " | Confidence: " + currentProb +
-                                				" | Entity #1: " + temp[0] + " (" + temp[1] + ") " +
-                                				" | Entity #2: " + temp[2] + " (" + temp[3] + ") ")
-                				print(lineString)
+                                                print("Sentence: " + newsentence)
+                                                lineString = ("Relation type: " + setRelation + " | Confidence: " + currentProb +
+                                                                " | Entity #1: " + temp[0] + " (" + temp[1] + ") " +
+                                                                " | Entity #2: " + temp[2] + " (" + temp[3] + ") ")
+                                                print(lineString)
                                                 newsentence = ""
-                print("Relations extracted from this website: " + str(siteRCount) + "(Overall: " + str(totalRCount) + ")") 
-
-        print("===================== ALL RELATIONS =====================")
+                print("Relations extracted from this website: " + str(siteRCount) + "(Overall: " + str(totalRCount) + ")")
         #print all tuples from this set of urls
         if len(tempRelList) != 0:
                 tempRelList = sorted(tempRelList, key=itemgetter(0))
@@ -179,7 +162,6 @@ while len(relationList) < k:
                                 " | Entity #1: " + rList[1] + " (" + rList[2] + ") " +
                                 " | Entity #2: " + rList[3] + " (" + rList[4] + ") ")
                 print(lineString)
-        
         #set duplicates in tuples list to [], then remove all instances of [] from the list
         D = defaultdict(list)
         for i,item in enumerate(relationList):
@@ -193,7 +175,6 @@ while len(relationList) < k:
                 else:
                         relationList[indices[0]] = []
         relationList = [x for x in relationList if x != []]
-
         if len(relationList) < k:
                 if len(relationList) == 0:
                         break   #too many iterations have gone by, we've used up all our tuples
@@ -205,6 +186,13 @@ while len(relationList) < k:
                                 maxr = relationList[i]
                 querytup = maxr[1] + " " + maxr[3]
                 res = sendQuery(service, querytup)
-
                 itercount += 1
                 print "iteration ", itercount
+print("===================== ALL RELATIONS =====================")
+relationList = sorted(tempRelList, key=itemgetter(0))
+for i in range(0, k):
+        rList = relationList[i]
+        lineString = ("Relation type: " + setRelation + " | Confidence: " + rList[0] +
+                                " | Entity #1: " + rList[1] + " (" + rList[2] + ") " +
+                                " | Entity #2: " + rList[3] + " (" + rList[4] + ") ")
+        print(lineString)
