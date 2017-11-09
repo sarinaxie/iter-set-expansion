@@ -1,570 +1,281 @@
-per se====================================================================================================================================
-
-
-Parameters:
-Client key = AIzaSyBbGfil_xv2ICSW4xjT5RYY92l96nahFEs
-Engine key = 007382945159574133954:avqdfgjg420
-Precision = .9
-Query = per se
-Google search results:
-============================================
-new query: per se
-
-www.thomaskeller.com
-<b>Per Se</b> | Thomas Keller Restaurant Group
-<b>Per Se</b> entrance. center. Macadamia nut dipped in chocolate. left. Mini meat filled <br>
-pastries. right. <b>Per Se</b> Salon. center. Fish and vegetables. right. Oysters and&nbsp;...
-
-relevant, y/n?
-y
-
-www.dictionary.com
-<b>Per se</b> | Define <b>Per se</b> at Dictionary.com
-<b>Per se</b> definition, by, of, for, or in itself; intrinsically: This candidate is not a pacifist <br>
-<b>per se</b>, but he is in favor of peaceful solutions when practicable. See more.
-
-relevant, y/n?
-n
-
-www.merriam-webster.com
-<b>Perse</b> | Definition of <b>Perse</b> by Merriam-Webster
-Define <b>perse</b>: of a dark grayish blue resembling indigo — <b>perse</b> in a sentence.
-
-relevant, y/n?
-n
-
-en.wiktionary.org
-<b>per se</b> - Wiktionary
-Borrowed from Latin <b>per se</b> (“by itself”), from per (“by, through”) and se (“itself, <br>
-himself, ... Well, that&#39;s not correct <b>per se</b>, but the situation is something like that.
-
-relevant, y/n?
-n
-
-en.wikipedia.org
-<b>Per se</b> - Wikipedia
-<b>Per se</b> may refer to: <b>per se</b> (Latin), a Latin phrase meaning &quot;by itself&quot; or &quot;in itself&quot;. <br>
-Illegal <b>per se</b>, the legal usage in criminal and anti-trust law; Negligence <b>per se</b>,&nbsp;...
-
-relevant, y/n?
-n
-
-www.yelp.com
-<b>Per Se</b> - 3882 Photos &amp; 1287 Reviews - French - 10 Columbus Cir ...
-1287 reviews of <b>Per Se</b> &quot;<b>Per Se</b> is the best of the best. I&#39;ve had the pleasure of <br>
-dining at many of the worlds &quot;Best Restaurants&quot; and <b>Per Se</b> is obvious why they&#39;<br>
-re&nbsp;...
-
-relevant, y/n?
-y
-
-www.nytimes.com
-At Thomas Keller&#39;s <b>Per Se</b>, Slips and Stumbles - The New York Times
-Jan 12, 2016 <b>...</b> Such is <b>Per Se&#39;s</b> mystique that I briefly wondered if the failure to bring her a new <br>
-napkin could have been intentional. The restaurant&#39;s identity, to&nbsp;...
-
-relevant, y/n?
-y
-
-www.vocabulary.com
-<b>per se</b> - Dictionary Definition : Vocabulary.com
-<b>Per se</b> is the phrase to use when you want to refer to a particular thing on its own. <br>
-It is not this Latin phrase, <b>per se</b>, that is important, but rather the concept it&nbsp;...
-
-relevant, y/n?
-n
-
-en.wikipedia.org
-<b>Per Se</b> (restaurant) - Wikipedia
-<b>Per Se</b> is a New American and French restaurant located on the fourth floor of the <br>
-Time Warner Center at 10 Columbus Circle in Manhattan in New York City,&nbsp;...
-
-relevant, y/n?
-y
-
-nymag.com
-<b>Per Se</b> - Upper West Side - New York Magazine Restaurant Guide
-Profile. When it debuted in 2004, Thomas Keller&#39;s <b>Per Se</b> was the belle of the <br>
-city&#39;s restaurant ball. There was nothing stagy or solemn about the food, which <br>
-felt&nbsp;...
-
-relevant, y/n?
-y
-new words: 
-[u'restaurant', u'thomas']
-precision: 0.5
-next loop
-
-Google search results:
-============================================
-new query: per se restaurant thomas
-
-www.thomaskeller.com
-<b>Restaurant</b> | <b>Thomas</b> Keller <b>Restaurant</b> Group
-<b>Restaurant</b>. Opened in 2004, <b>Per Se</b> is <b>Thomas</b> Keller&#39;s acclaimed New York <br>
-interpretation of The French Laundry in the Time Warner Center at Columbus <br>
-Circle&nbsp;...
-
-relevant, y/n?
-y
-
-en.wikipedia.org
-<b>Per Se</b> (<b>restaurant</b>) - Wikipedia
-<b>Per Se</b> is a New American and French <b>restaurant</b> located on the fourth floor of the <br>
-Time Warner ... The owner is <b>Thomas</b> Keller, who opened <b>Per Se</b> in February of <br>
-2004 and is also involved in the <b>restaurants</b> The French Laundry and Ad Hoc in&nbsp;...
-
-relevant, y/n?
-y
-
-www.thomaskeller.com
-<b>Per Se</b> | <b>Thomas</b> Keller <b>Restaurant</b> Group
-Macadamia nut dipped in chocolate. left. Mini meat filled pastries. right. <b>Per Se</b> <br>
-Salon. center. Fish and vegetables. right. Oysters and Caviar; resting on tapioca&nbsp;...
-
-relevant, y/n?
-y
-
-www.nytimes.com
-At <b>Thomas</b> Keller&#39;s <b>Per Se</b>, Slips and Stumbles - The New York Times
-Jan 12, 2016 <b>...</b> Such is <b>Per Se&#39;s</b> mystique that I briefly wondered if the failure to bring her a new <br>
-napkin could have been intentional. The <b>restaurant&#39;s</b> identity, to&nbsp;...
-
-relevant, y/n?
-y
-
-www.thomaskeller.com
-Today&#39;s Menus | <b>Thomas</b> Keller <b>Restaurant</b> Group
-Daily Menus Two tasting menus are offered daily: a nine-course chef&#39;s tasting <br>
-menu as well as a nine-course vegetable tasting menu. No single ingredient is&nbsp;...
-
-relevant, y/n?
-y
-
-www.miaminewtimes.com
-The French Laundry and <b>Per Se&#39;s Thomas</b> Keller Opening Miami...
-Dec 30, 2016 <b>...</b> <b>Thomas</b> Keller, among America&#39;s most revered chefs, put to bed ... Laundry and <br>
-<b>Per Se&#39;s Thomas</b> Keller Opening Miami <b>Restaurant</b> in 2018.
-
-relevant, y/n?
-y
-
-nymag.com
-<b>Thomas</b> Keller&#39;s <b>Per Se</b> - New York Magazine <b>Restaurant</b> Review
-During the course of one of my long, exhaustively intricate meals at <b>Per Se</b>, <br>
-<b>Thomas</b> Keller&#39;s new <b>restaurant</b> in the Time Warner Center, one of my guests&nbsp;...
-
-relevant, y/n?
-y
-
-www.townandcountrymag.com
-<b>Thomas</b> Keller Responds to New York Times Review of <b>Per Se</b> ...
-Sep 8, 2016 <b>...</b> But on January 12 the New York Times had knocked <b>Per Se</b>, his seemingly <br>
-untouchable <b>restaurant</b> on Columbus Circle in Manhattan, down&nbsp;...
-
-relevant, y/n?
-y
-
-www.grubstreet.com
-Corey Chow Is the New Chef at <b>Thomas</b> Keller&#39;s <b>Per Se</b>
-Aug 7, 2017 <b>...</b> The last three years have not been so kind to <b>Thomas</b> Keller&#39;s <b>Per Se</b>, the <br>
-<b>restaurant</b> once considered New York&#39;s best example of fine <b>dining</b>.
-
-relevant, y/n?
-y
-
-ny.eater.com
-Keller Responds to <b>Per Se</b> Review: &#39;We Are Sorry We Let You Down ...
-Jan 28, 2016 <b>...</b> Two weeks ago, Pete Wells delivered a sharp, swift blow to <b>Thomas</b> Keller and <br>
-his crew at <b>Per Se</b> by demoting the <b>restaurant</b> from four stars&nbsp;...
-
-relevant, y/n?
-y
-new words: 
-[u'keller', u'kellers']
-precision: 1.0
-next loop
-
-desired precision reached, done
-
-
-
-brin====================================================================================================================================
-
-Parameters:
-Client key = AIzaSyBbGfil_xv2ICSW4xjT5RYY92l96nahFEs
-Engine key = 007382945159574133954:avqdfgjg420
-Precision = .9
-Query = brin
-Google search results:
-============================================
-new query: brin
-
-en.wikipedia.org
-Sergey <b>Brin</b> - Wikipedia
-Sergey Mikhaylovich <b>Brin</b> is a Russian-born American computer scientist and <br>
-internet entrepreneur. Together with Larry Page, he co-founded Google. <b>Brin</b> is <br>
-the&nbsp;...
-
-relevant, y/n?
-y
-
-www.thefreedictionary.com
-<b>Brin</b> - definition of <b>brin</b> by The Free Dictionary
-Define <b>brin</b>. <b>brin</b> synonyms, <b>brin</b> pronunciation, <b>brin</b> translation, English dictionary <br>
-definition of <b>brin</b>. n 1. one of two filaments of silk combined by the silkworm to&nbsp;...
-
-relevant, y/n?
-n
-
-www.davidbrin.com
-worlds of David <b>Brin</b>
-The official website of best-selling science fiction writer and futurist DAVID <b>BRIN</b>.
-
-relevant, y/n?
-n
-
-en.wiktionary.org
-<b>brin</b> - Wiktionary
-The imported definitions may be significantly out of date, and any more recent <br>
-senses may be completely missing. (See the entry for <b>brin</b> in Webster&#39;s Revised&nbsp;...
-
-relevant, y/n?
-n
-
-brin.ai
-<b>BRiN</b> - The World&#39;s First 24/7 Business Advisor, Entrepreneur Coach ...
-Introducing <b>BRiN</b> - Your Personal Business Advisor. Download <b>BRiN</b> today &amp; get <br>
-instant access to real-time support and hundreds of business education videos.
-
-relevant, y/n?
-n
-
-play.google.com
-<b>BRiN</b>® - Growing Your Business™ - Android Apps on Google Play
-Want help to grow your business? Then it&#39;s time to download the world&#39;s #1 App <br>
-for business owners, entrepreneurs, senior leaders, executives and start-ups!
-
-relevant, y/n?
-n
-
-sites.usd.edu
-<b>brin</b>
-<b>BRIN</b> Project Description: SD <b>BRIN</b> has been funded by the National Center for <br>
-Research Resources (NIH) since 2001. We have several Cores (proteomics,&nbsp;...
-
-relevant, y/n?
-n
-
-www.bloomberg.com
-Bloomberg Billionaires Index - Sergey <b>Brin</b>
-Overview. <b>Brin</b> is president of Alphabet, the holding company that owns Google, <br>
-the world&#39;s largest search-engine operator. He co-founded the Mountain View,&nbsp;...
-
-relevant, y/n?
-y
-
-www.businessinsider.com
-Sergey <b>Brin&#39;s</b> resume from 1996, 2 years before he cofounded ...
-Sep 27, 2017 <b>...</b> Google cofounder Sergey <b>Brin</b> was pursuing a Ph.D. in computer science at <br>
-Stanford two years before Google was born.
-
-relevant, y/n?
-y
-
-www.bloomberg.com
-With Secret Airship, Sergey <b>Brin</b> Also Wants to Fly - Bloomberg
-Apr 25, 2017 <b>...</b> Sergey <b>Brin</b> shall have an airship. <b>Brin</b>, the Google co-founder, has secretly been <br>
-building a massive airship inside of Hangar 2 at the NASA&nbsp;...
-
-relevant, y/n?
-y
-new words: 
-[u'sergey', u'google']
-precision: 0.4
-next loop
-
-Google search results:
-============================================
-new query: sergey brin google
-
-en.wikipedia.org
-<b>Sergey Brin</b> - Wikipedia
-<b>Sergey</b> Mikhaylovich <b>Brin</b> is a Russian-born American computer scientist and <br>
-internet entrepreneur. Together&nbsp;...
-
-relevant, y/n?
-y
-
-www.businessinsider.com
-<b>Sergey Brin</b>: The life of <b>Google&#39;s</b> cofounder, Alphabet&#39;s president ...
-Dec 24, 2016 <b>...</b> <b>Sergey Brin</b> cofounded <b>Google</b> with Larry Page and now serves as the president <br>
-of Alphabet. Here&#39;s a look at how he got to where he is today.
-
-relevant, y/n?
-y
-
-www.ted.com
-<b>Sergey Brin</b>: Why <b>Google</b> Glass? | TED Talk | TED.com
-It&#39;s not a demo, more of a philosophical argument: Why did <b>Sergey Brin</b> and his <br>
-team at <b>Google</b> want to build an eye-mounted camera/computer, codenamed&nbsp;...
-
-relevant, y/n?
-y
-
-www.cnbc.com
-<b>Google&#39;s</b> Larry Page and <b>Sergey Brin</b> ask an unusual interview ...
-May 31, 2017 <b>...</b> If you ever landed a job interview at <b>Google</b> with co-founders Larry Page and <br>
-<b>Sergey Brin</b>, you&#39;d expect the questions to be difficult.
-
-relevant, y/n?
-y
-
-www.forbes.com
-<b>Sergey Brin</b>
-<b>Brin</b> works as president of tech giant Alphabet, the parent firm of <b>Google</b>. He <br>
-previously ran the secretive <b>Google</b> X division, which made the ill-fated <b>Google</b>&nbsp;...
-
-relevant, y/n?
-y
-
-www.vanityfair.com
-<b>Sergey Brin</b> and Amanda Rosenberg: Inside the <b>Google</b> Co ...
-The story behind <b>Google</b> co-founder <b>Sergey Brin&#39;s</b> liaison with <b>Google</b> Glass <br>
-marketing manager Amanda Rosenberg—and his split from his wife, genetic-<br>
-testing&nbsp;...
-
-relevant, y/n?
-y
-
-www.biography.com
-<b>Sergey Brin</b> - Inventor, Computer Programmer, Engineer - Biography ...
-Nov 2, 2016 <b>...</b> <b>Sergey Brin</b> is the man who created the world&#39;s most popular search engine, <br>
-<b>Google</b>, with Larry Page in 1998. Learn more about his life and&nbsp;...
-
-relevant, y/n?
-y
-
-www.recode.net
-<b>Google</b> co-founder <b>Sergey Brin</b> has been instructed to give a ...
-Jul 26, 2017 <b>...</b> Alphabet&#39;s attorneys have been instructed to tell <b>Google</b> co-founder <b>Sergey Brin</b> “<br>
-to show up” for a deposition in the company&#39;s lawsuit against&nbsp;...
-
-relevant, y/n?
-y
-
-www.youtube.com
-The crazy life of <b>Google</b> founder <b>Sergey Brin</b> - YouTube
-Sep 1, 2015 <b>...</b> Please try again later. Published on Sep 1, 2015. <b>Google</b> co-founder <b>Sergey Brin</b> <br>
-is incredibly successful. Here&#39;s a look into his unorthodox life.
-
-relevant, y/n?
-y
-
-techcrunch.com
-<b>Google&#39;s Sergey Brin</b> said to be working on a zeppelin-like airship ...
-Apr 25, 2017 <b>...</b> <b>Google</b> co-founder <b>Sergey Brin</b> has been known to enjoy ambitious flights of <br>
-technological fancy, but this may be his flightiest: Bloomberg&nbsp;...
-
-relevant, y/n?
-y
-new words: 
-[u'cofounder', u'life']
-precision: 1.0
-next loop
-
-desired precision reached, done
-
-
-
-jaguar====================================================================================================================================
-
-
-Parameters:
-Client key = AIzaSyBbGfil_xv2ICSW4xjT5RYY92l96nahFEs
-Engine key = 007382945159574133954:avqdfgjg420
-Precision = .9
-Query = jaguar
-Google search results:
-============================================
-new query: jaguar
-
-www.jaguarusa.com
-<b>Jaguar</b> USA: <b>Jaguar</b> Sedans, SUVs &amp; Sports Cars - Official Site
-The official home of <b>Jaguar</b> USA. Explore our luxury sedans, SUVs and sports <br>
-cars. Build Yours, Schedule a Test Drive or Find a Dealer Near You.
-
-relevant, y/n?
-y
-
-en.wikipedia.org
-<b>Jaguar</b> - Wikipedia
-The <b>jaguar</b> (Panthera onca) is a big cat, a feline in the Panthera genus, and is the <br>
-only extant Panthera species native to the Americas. The <b>jaguar</b> is the&nbsp;...
-
-relevant, y/n?
-n
-
-www.jaguarusa.com
-Build Yours | <b>Jaguar</b> USA
-Build your <b>Jaguar</b> sport luxury vehicle today. Choose from XE, XF, F-PACE or <br>
-other models designed to fit your lifestyle and personal taste.
-
-relevant, y/n?
-y
-
-en.wikipedia.org
-<b>Jaguar</b> Cars - Wikipedia
-<b>Jaguar</b> is the luxury vehicle brand of <b>Jaguar</b> Land Rover, a British multinational <br>
-car manufacturer with its headquarters in Whitley, Coventry, England, owned by&nbsp;...
-
-relevant, y/n?
-y
-
-www.jaguarusa.com
-All Models - Luxury Sedans, Sports Cars &amp; SUVs | <b>Jaguar</b> USA
-Explore the latest and newest generation cars by <b>Jaguar</b>. From performance <br>
-crossover SUVs, luxury sport sedans, coupe and convertibles to future concept <br>
-cars.
-
-relevant, y/n?
-y
-
-www.caranddriver.com
-<b>Jaguar</b> Cars | 2017 <b>Jaguar</b> Models and Prices | Car and Driver
-Check out the 2017 <b>Jaguar</b> car models, starting prices and ratings from our <br>
-experts at Car and Driver.
-
-relevant, y/n?
-y
-
-www.defenders.org
-<b>Jaguar</b> | Basic Facts About <b>Jaguars</b> | Defenders of Wildlife
-The <b>jaguar</b> is the largest cat in the Americas. The <b>jaguar</b> has a compact body, a <br>
-broad head and powerful jaws. Its coat is normally yellow and tan, but the color&nbsp;...
-
-relevant, y/n?
-n
-
-www.jaguars.com
-<b>Jaguars</b> vs. Steelers
-Links to Action News Jax. ©2017 Jacksonville <b>Jaguars</b>, LLC. All Rights Reserved<br>
-. Jacksonville <b>Jaguars</b>, One EverBank Field Drive, Jacksonville, FL 32202.
-
-relevant, y/n?
-n
-
-www.nfl.com
-Jacksonville <b>Jaguars</b> Team Page at NFL.com
-Visit the <b>Jaguars</b>&#39; official website for your daily fix of team information. ... <br>
-Jacksonville <b>Jaguars</b> rookie running back Leonard Fournette is already drawing <br>
-high&nbsp;...
-
-relevant, y/n?
-n
-
-www.jaguarusa.com
-Certified Pre-Owned Program Benefits | <b>Jaguar</b> USA
-Learn about the benefits of the <b>Jaguar</b> Certified Pre-Owned Vehicle Program, <br>
-including a rigorous inspection and warranty information.
-
-relevant, y/n?
-y
-new words: 
-[u'cars', u'usa']
-precision: 0.6
-next loop
-
-Google search results:
-============================================
-new query: jaguar usa cars
-
-www.jaguarusa.com
-<b>Jaguar USA</b>: Jaguar Sedans, SUVs &amp; Sports <b>Cars</b> - Official Site
-The official home of <b>Jaguar USA</b>. Explore our luxury sedans, SUVs and sports <br>
-<b>cars</b>. Build Yours, Schedule a Test Drive or Find a Dealer Near You.
-
-relevant, y/n?
-y
-
-www.used.jaguarusa.com
-Certified Pre-Owned Inventory - Used <b>Vehicles</b> | <b>Jaguar USA</b>
-Certified Pre-Owned Inventory - Used <b>Vehicles</b> | <b>Jaguar USA</b>.
-
-relevant, y/n?
-y
-
-www.jaguarusa.com
-All Models - Luxury Sedans, Sports <b>Cars</b> &amp; SUVs | <b>Jaguar USA</b>
-Explore the latest and newest generation <b>cars</b> by <b>Jaguar</b>. From performance <br>
-crossover SUVs, luxury sport sedans, coupe and convertibles to future concept <br>
-<b>cars</b>.
-
-relevant, y/n?
-y
-
-www.jaguarusa.com
-Certified Pre-Owned Program Benefits | <b>Jaguar USA</b>
-Learn about the benefits of the <b>Jaguar</b> Certified Pre-Owned <b>Vehicle</b> Program, <br>
-including a rigorous inspection and warranty information.
-
-relevant, y/n?
-y
-
-www.jaguarusa.com
-2018 Jaguar F-PACE® - The First Jaguar SUV | <b>Jaguar USA</b>
-The first <b>Jaguar</b> performance crossover SUV, inspired by the F-TYPE with <br>
-luxurious ... for every day, the F-PACE is a <b>Jaguar vehicle</b> for you and for your <br>
-family.
-
-relevant, y/n?
-y
-
-www.youtube.com
-<b>Jaguar USA</b> - YouTube
-<b>Jaguar</b> is a premier manufacturer of luxury sedans and sports <b>cars</b> offering <br>
-unparalleled design with tremendous performance. Our <b>cars</b> are a blend of <br>
-responsiv.
-
-relevant, y/n?
-y
-
-www.jaguarusa.com
-2018 Jaguar F-TYPE – Sleek Design &amp; Pure Power | <b>Jaguar USA</b>
-Experience the latest in a distinguished bloodline. The F‑TYPE range offers <br>
-sports <b>cars</b> that only <b>Jaguar</b> could create - effortless performance and precise <br>
-agile&nbsp;...
-
-relevant, y/n?
-y
-
-new.jaguarusa.com
-New Inventory - New <b>Vehicles</b> | <b>Jaguar USA</b>
-2017. <b>Jaguar</b> F-TYPE <b>Jaguar</b> Treasure Coast. $53,550 Call For Price; Polaris <br>
-White; New. See Details &middot; 2017 <b>Jaguar</b> F-TYPE&nbsp;...
-
-relevant, y/n?
-y
-
-shop.jaguarusa.com
-Shop <b>Jaguar</b>: <b>Jaguar</b> Home
-Visit the <b>Jaguar</b> Online Store to find classic <b>Jaguar</b> clothing, accessories and gifts <br>
-while exploring the look behind the <b>Jaguar</b> lifestyle.
-
-relevant, y/n?
-y
-
-www.facebook.com
-<b>Jaguar</b> - Home | Facebook
-F-TYPE SVR | 0-60 | <b>Jaguar USA</b>. 384. 64. XE SV Project 8 - <b>Jaguar USA</b> ..... <br>
-keeping vintage race <b>cars</b> on race tracks where they belong, Jaguar is proud to <br>
-be&nbsp;...
-
-relevant, y/n?
-y
-new words: 
-[u'sedans', u'sports']
-precision: 1.0
-next loop
-
-desired precision reached, done
+Sentence:   -LSB- 1 -RSB- However , on July 27 , 2017 , and since October 27 , 2017 , he has been surpassed by A
+mazon.com founder Jeff Bezos , who has an estimated net worth of US$ 93.9 billion .
+Relation type: Work_For | Confidence: 0.35333932418342323 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ba
+llmer (PEOPLE) 
+Sentence:   -LSB- 1 -RSB- However , on July 27 , 2017 , and since October 27 , 2017 , he has been surpassed by A
+mazon.com founder Jeff Bezos , who has an estimated net worth of US$ 93.9 billion .
+Relation type: Work_For | Confidence: 0.35333932418342323 | Entity #1: Ballmer (PEOPLE)  | Entity #2: Microsoft 
+(ORGANIZATION) 
+Sentence:   As of January 2014 , most of Gates 's assets are held in Cascade Investment LLC , an entity through 
+which he owns stakes in numerous businesses , including Four Seasons Hotels and Resorts , and Corbis Corp. -LSB-
+ 72 -RSB- On February 4 , 2014 , Gates stepped down as chairman of Microsoft to become Technology Advisor alongs
+ide new CEO Satya Nadella .
+Relation type: Work_For | Confidence: 0.35333932418342323 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ba
+llmer (PEOPLE) 
+Sentence:   -LSB- 94 -RSB- Since October 2017 , Gates was surpassed by Amazon.com founder Jeff Bezos as the rich
+est person in the world .
+Relation type: Work_For | Confidence: 0.35333932418342323 | Entity #1: Ballmer (PEOPLE)  | Entity #2: Microsoft 
+(ORGANIZATION) 
+Sentence:   -LSB- 94 -RSB- Since October 2017 , Gates was surpassed by Amazon.com founder Jeff Bezos as the rich
+est person in the world .
+Relation type: Work_For | Confidence: 0.36962824323754234 | Entity #1: Bill (PEOPLE)  | Entity #2: one (O) 
+Sentence:   In 2004 , he became a director of Berkshire Hathaway , the investment company headed by long-time fr
+iend Warren Buffett .
+Relation type: Work_For | Confidence: 0.36962824323754234 | Entity #1: Bill (PEOPLE)  | Entity #2: one (O) 
+Sentence:   In 2004 , he became a director of Berkshire Hathaway , the investment company headed by long-time fr
+iend Warren Buffett .
+Relation type: Work_For | Confidence: 0.36962824323754234 | Entity #1: Bill (PEOPLE)  | Entity #2: one (O) 
+Sentence:   In 2004 , he became a director of Berkshire Hathaway , the investment company headed by long-time fr
+iend Warren Buffett .
+Relation type: Work_For | Confidence: 0.37891746988710556 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (O
+RGANIZATION) 
+Sentence:   Specifically , the foundation is supporting the International Rice Research Institute in developing 
+Golden Rice , a genetically modified rice variant used to combat Vitamin A deficiency .
+Relation type: Work_For | Confidence: 0.37891746988710556 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (O
+RGANIZATION) 
+Sentence:   In 1999 , Gates donated $ 20 million to the Massachusetts Institute of Technology -LRB- MIT -RRB- fo
+r the construction of a computer laboratory named the `` William H. Gates Building '' that was designed by archi
+tect Frank Gehry .
+Relation type: Work_For | Confidence: 0.37891746988710556 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (O
+RGANIZATION) 
+Sentence:   -LSB- 114 -RSB- The Maxwell Dworkin Laboratory of the Harvard John A. Paulson School of Engineering 
+and Applied Sciences is named after the mothers of both Gates and Microsoft President Steven A. Ballmer , both o
+f whom were students -LRB- Ballmer was a member of the School 's graduating class of 1977 , while Gates left his
+ studies for Microsoft -RRB- , and donated funds for the laboratory 's construction .
+Relation type: Work_For | Confidence: 0.37891746988710556 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (O
+RGANIZATION) 
+Sentence:   -LSB- 114 -RSB- The Maxwell Dworkin Laboratory of the Harvard John A. Paulson School of Engineering 
+and Applied Sciences is named after the mothers of both Gates and Microsoft President Steven A. Ballmer , both o
+f whom were students -LRB- Ballmer was a member of the School 's graduating class of 1977 , while Gates left his
+ studies for Microsoft -RRB- , and donated funds for the laboratory 's construction .
+Relation type: Work_For | Confidence: 0.38065775781969136 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Na
+della (PEOPLE) 
+Sentence:   Gates posted the video after Facebook founder Mark Zuckerberg challenged him to do so in order to ra
+ise awareness for the disease ALS -LRB- amyotrophic lateral sclerosis -RRB- .
+Relation type: Work_For | Confidence: 0.38065775781969136 | Entity #1: Nadella (PEOPLE)  | Entity #2: Microsoft 
+(ORGANIZATION) 
+Sentence:   Gates posted the video after Facebook founder Mark Zuckerberg challenged him to do so in order to ra
+ise awareness for the disease ALS -LRB- amyotrophic lateral sclerosis -RRB- .
+Relation type: Work_For | Confidence: 0.38065775781969136 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Na
+della (PEOPLE) 
+Sentence:   -LSB- 1 -RSB- However , on July 27 , 2017 , and since October 27 , 2017 , he has been surpassed by A
+mazon.com founder Jeff Bezos , who has an estimated net worth of US$ 93.9 billion .
+Relation type: Work_For | Confidence: 0.38065775781969136 | Entity #1: Nadella (PEOPLE)  | Entity #2: Microsoft 
+(ORGANIZATION) 
+Sentence:   -LSB- 1 -RSB- However , on July 27 , 2017 , and since October 27 , 2017 , he has been surpassed by A
+mazon.com founder Jeff Bezos , who has an estimated net worth of US$ 93.9 billion .
+Relation type: Work_For | Confidence: 0.3900508919089389 | Entity #1: Bill (PEOPLE)  | Entity #2: Microsoft (ORG
+ANIZATION) 
+Sentence:   As of January 2014 , most of Gates 's assets are held in Cascade Investment LLC , an entity through 
+which he owns stakes in numerous businesses , including Four Seasons Hotels and Resorts , and Corbis Corp. -LSB-
+ 72 -RSB- On February 4 , 2014 , Gates stepped down as chairman of Microsoft to become Technology Advisor alongs
+ide new CEO Satya Nadella .
+Relation type: Work_For | Confidence: 0.3900508919089389 | Entity #1: Bill (PEOPLE)  | Entity #2: Microsoft (ORG
+ANIZATION) 
+Sentence:   -LSB- 94 -RSB- Since October 2017 , Gates was surpassed by Amazon.com founder Jeff Bezos as the rich
+est person in the world .
+Relation type: Work_For | Confidence: 0.40622122992834303 | Entity #1: Rice (PEOPLE)  | Entity #2: Institute (OR
+GANIZATION) 
+Sentence:   -LSB- 94 -RSB- Since October 2017 , Gates was surpassed by Amazon.com founder Jeff Bezos as the rich
+est person in the world .
+Relation type: Work_For | Confidence: 0.40622122992834303 | Entity #1: Rice (PEOPLE)  | Entity #2: Institute (OR
+GANIZATION) 
+Sentence:   In 2004 , he became a director of Berkshire Hathaway , the investment company headed by long-time fr
+iend Warren Buffett .
+Relation type: Work_For | Confidence: 0.4070887250730468 | Entity #1: 2008 (O)  | Entity #2: Bill (PEOPLE) 
+Sentence:   In 2004 , he became a director of Berkshire Hathaway , the investment company headed by long-time fr
+iend Warren Buffett .
+Relation type: Work_For | Confidence: 0.4070887250730468 | Entity #1: 2008 (O)  | Entity #2: Bill (PEOPLE) 
+Sentence:   Specifically , the foundation is supporting the International Rice Research Institute in developing 
+Golden Rice , a genetically modified rice variant used to combat Vitamin A deficiency .
+Relation type: Work_For | Confidence: 0.41279580010383143 | Entity #1: Buffett (PEOPLE)  | Entity #2: Hathaway (
+ORGANIZATION) 
+Sentence:   In 1999 , Gates donated $ 20 million to the Massachusetts Institute of Technology -LRB- MIT -RRB- fo
+r the construction of a computer laboratory named the `` William H. Gates Building '' that was designed by archi
+tect Frank Gehry .
+Relation type: Work_For | Confidence: 0.41279580010383143 | Entity #1: Buffett (PEOPLE)  | Entity #2: Hathaway (
+ORGANIZATION) 
+Sentence:   -LSB- 114 -RSB- The Maxwell Dworkin Laboratory of the Harvard John A. Paulson School of Engineering 
+and Applied Sciences is named after the mothers of both Gates and Microsoft President Steven A. Ballmer , both o
+f whom were students -LRB- Ballmer was a member of the School 's graduating class of 1977 , while Gates left his
+ studies for Microsoft -RRB- , and donated funds for the laboratory 's construction .
+Relation type: Work_For | Confidence: 0.41456570829424655 | Entity #1: Bill (PEOPLE)  | Entity #2: 2008 (O) 
+Sentence:   -LSB- 114 -RSB- The Maxwell Dworkin Laboratory of the Harvard John A. Paulson School of Engineering 
+and Applied Sciences is named after the mothers of both Gates and Microsoft President Steven A. Ballmer , both o
+f whom were students -LRB- Ballmer was a member of the School 's graduating class of 1977 , while Gates left his
+ studies for Microsoft -RRB- , and donated funds for the laboratory 's construction .
+ Relation type: Work_For | Confidence: 0.41456570829424655 | Entity #1: Bill (PEOPLE)  | Entity #2: 2008 (O) 
+Sentence:   Gates posted the video after Facebook founder Mark Zuckerberg challenged him to do so in order to ra
+ise awareness for the disease ALS -LRB- amyotrophic lateral sclerosis -RRB- .
+Relation type: Work_For | Confidence: 0.4437710008969822 | Entity #1: Hathaway (ORGANIZATION)  | Entity #2: Buff
+ett (PEOPLE) 
+Sentence:   Gates posted the video after Facebook founder Mark Zuckerberg challenged him to do so in order to ra
+ise awareness for the disease ALS -LRB- amyotrophic lateral sclerosis -RRB- .
+Relation type: Work_For | Confidence: 0.4437710008969822 | Entity #1: Hathaway (ORGANIZATION)  | Entity #2: Buff
+ett (PEOPLE) 
+Sentence:   With $ 89 -LRB- # 67bn -RRB- billion in the bank , Microsoft founder Bill Gates has been the world '
+s richest man since May 2013 .
+Relation type: Work_For | Confidence: 0.4453414248866344 | Entity #1: Bezos (PEOPLE)  | Entity #2: Amazon (ORGAN
+IZATION) 
+Sentence:   With $ 89 -LRB- # 67bn -RRB- billion in the bank , Microsoft founder Bill Gates has been the world '
+s richest man since May 2013 .
+Relation type: Work_For | Confidence: 0.4453414248866344 | Entity #1: Bezos (PEOPLE)  | Entity #2: Amazon (ORGAN
+IZATION) 
+Sentence:   After founding and developing one of the most powerful and profitable technology companies in histor
+y , since 2008 he has dedicated his life to charity work via The Bill and Melinda Gates Foundation , so far givi
+ng away $ 31.1 bn .
+Relation type: Work_For | Confidence: 0.445540294239112 | Entity #1: Gates (PEOPLE)  | Entity #2: Institute (ORG
+ANIZATION) 
+Sentence:   After founding and developing one of the most powerful and profitable technology companies in histor
+y , since 2008 he has dedicated his life to charity work via The Bill and Melinda Gates Foundation , so far givi
+ng away $ 31.1 bn .
+Relation type: Work_For | Confidence: 0.445540294239112 | Entity #1: Gates (PEOPLE)  | Entity #2: Institute (ORG
+ANIZATION) 
+Sentence:   After founding and developing one of the most powerful and profitable technology companies in histor
+y , since 2008 he has dedicated his life to charity work via The Bill and Melinda Gates Foundation , so far givi
+ng away $ 31.1 bn .
+Relation type: Work_For | Confidence: 0.464965290606408 | Entity #1: Amazon (ORGANIZATION)  | Entity #2: Bezos (
+PEOPLE) 
+Sentence:   `` Google kicked our butts , '' said Gates in a 2005 interview , when he also branded Microsoft 's d
+ecision not to pursue a dedicated search engine from the outset as `` stupid as hell '' .
+Relation type: Work_For | Confidence: 0.464965290606408 | Entity #1: Amazon (ORGANIZATION)  | Entity #2: Bezos (
+PEOPLE) 
+Sentence:   With $ 89 -LRB- # 67bn -RRB- billion in the bank , Microsoft founder Bill Gates has been the world '
+s richest man since May 2013 .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   With $ 89 -LRB- # 67bn -RRB- billion in the bank , Microsoft founder Bill Gates has been the world '
+s richest man since May 2013 .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   After founding and developing one of the most powerful and profitable technology companies in histor
+y , since 2008 he has dedicated his life to charity work via The Bill and Melinda Gates Foundation , so far givi
+ng away $ 31.1 bn .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   After founding and developing one of the most powerful and profitable technology companies in histor
+y , since 2008 he has dedicated his life to charity work via The Bill and Melinda Gates Foundation , so far givi
+ng away $ 31.1 bn .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   After founding and developing one of the most powerful and profitable technology companies in histor
+y , since 2008 he has dedicated his life to charity work via The Bill and Melinda Gates Foundation , so far givi
+ng away $ 31.1 bn .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   `` Google kicked our butts , '' said Gates in a 2005 interview , when he also branded Microsoft 's d
+ecision not to pursue a dedicated search engine from the outset as `` stupid as hell '' .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   Microsoft co-founder Bill Gates is reducing his stake in the company to just 1.3 percent , after hol
+ding 24 percent of the software maker back in 1996 .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   Microsoft co-founder Bill Gates is reducing his stake in the company to just 1.3 percent , after hol
+ding 24 percent of the software maker back in 1996 .
+Relation type: Work_For | Confidence: 0.4696901871709929 | Entity #1: Gates (PEOPLE)  | Entity #2: Microsoft (OR
+GANIZATION) 
+Sentence:   Amazon founder Jeff Bezos is edging closer , though .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   Amazon founder Jeff Bezos is edging closer , though .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   Microsoft co-founder Bill Gates is reducing his stake in the company to just 1.3 percent , after hol
+ding 24 percent of the software maker back in 1996 .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   Microsoft co-founder Bill Gates is reducing his stake in the company to just 1.3 percent , after hol
+ding 24 percent of the software maker back in 1996 .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   Amazon founder Jeff Bezos is edging closer , though .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   Amazon founder Jeff Bezos is edging closer , though .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   In February 2014 , Gates announced that he was stepping down as Microsoft 's chairman to focus on ch
+aritable work at his foundation , the Bill and Melinda Gates Foundation .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   In February 2014 , Gates stepped down as chairman of Microsoft in order to move into a new position 
+as technology adviser ; longtime Microsoft CEO Steve Ballmer was replaced by 46-year-old Satya Nadella .
+Relation type: Work_For | Confidence: 0.48317660388102346 | Entity #1: Microsoft (ORGANIZATION)  | Entity #2: Ga
+tes (PEOPLE) 
+Sentence:   In February 2014 , Gates announced that he was stepping down as Microsoft 's chairman to focus on ch
+aritable work at his foundation , the Bill and Melinda Gates Foundation .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Amazon.com (ORGANIZATION)  | Entity #2: B
+ezos (PEOPLE) 
+Sentence:   In February 2014 , Gates stepped down as chairman of Microsoft in order to move into a new position 
+as technology adviser ; longtime Microsoft CEO Steve Ballmer was replaced by 46-year-old Satya Nadella .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Bezos (PEOPLE)  | Entity #2: Amazon.com (
+ORGANIZATION) 
+Sentence:   Microsoft co-founder Bill Gates says that the company 's CEO , Satya Nadella , is naturally great at
+ a skill that took him years to learn : how to deliver feedback with empathy .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Amazon.com (ORGANIZATION)  | Entity #2: B
+ezos (PEOPLE) 
+Sentence:   Microsoft co-founder Bill Gates says that the company 's CEO , Satya Nadella , is naturally great at
+ a skill that took him years to learn : how to deliver feedback with empathy .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Bezos (PEOPLE)  | Entity #2: Amazon.com (
+ORGANIZATION) 
+Sentence:   It was very hard-core , '' Gates told the magazine , citing his rivalry with Apple co-founder Steve 
+Jobs .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Facebook (ORGANIZATION)  | Entity #2: Zuc
+kerberg (PEOPLE) 
+Sentence:   It was very hard-core , '' Gates told the magazine , citing his rivalry with Apple co-founder Steve 
+Jobs .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Zuckerberg (PEOPLE)  | Entity #2: Faceboo
+k (ORGANIZATION) 
+Sentence:   Gates has reclaimed some oversight of Microsoft 's products under the leadership of Nadella , who sa
+id that Gates has an inimitable way of `` galvanizing '' workers to do their best .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Amazon.com (ORGANIZATION)  | Entity #2: B
+ezos (PEOPLE) 
+Sentence:   Gates has reclaimed some oversight of Microsoft 's products under the leadership of Nadella , who sa
+id that Gates has an inimitable way of `` galvanizing '' workers to do their best .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Bezos (PEOPLE)  | Entity #2: Amazon.com (
+ORGANIZATION) 
+Sentence:   Microsoft co-founder Bill Gates says that the company 's CEO , Satya Nadella , is naturally great at
+ a skill that took him years to learn : how to deliver feedback with empathy .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Amazon.com (ORGANIZATION)  | Entity #2: B
+ezos (PEOPLE) 
+Sentence:   Microsoft co-founder Bill Gates says that the company 's CEO , Satya Nadella , is naturally great at
+ a skill that took him years to learn : how to deliver feedback with empathy .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Bezos (PEOPLE)  | Entity #2: Amazon.com (
+ORGANIZATION) 
+Sentence:   It was very hard-core , '' Gates told the magazine , citing his rivalry with Apple co-founder Steve 
+Jobs .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Facebook (ORGANIZATION)  | Entity #2: Zuc
+kerberg (PEOPLE) 
+Sentence:   It was very hard-core , '' Gates told the magazine , citing his rivalry with Apple co-founder Steve 
+Jobs .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Zuckerberg (PEOPLE)  | Entity #2: Faceboo
+k (ORGANIZATION) 
+Sentence:   Gates has reclaimed some oversight of Microsoft 's products under the leadership of Nadella , who sa
+id that Gates has an inimitable way of `` galvanizing '' workers to do their best .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Apple (ORGANIZATION)  | Entity #2: Jobs (
+PEOPLE) 
+Sentence:   Gates has reclaimed some oversight of Microsoft 's products under the leadership of Nadella , who sa
+id that Gates has an inimitable way of `` galvanizing '' workers to do their best .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Jobs (PEOPLE)  | Entity #2: Apple (ORGANI
+ZATION) 
+Sentence:   Loading ... Loading ... Loading ... Working ... Loading ... Loading ... Working ... Loading ... Load
+ing ... Loading ... June 17 -- Microsoft co-founder Bill Gates thinks that the company 's $ 26.2 billion acquisi
+tion of LinkedIn is a great transaction and that the two companies will have a lot of synergies together .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Apple (ORGANIZATION)  | Entity #2: Jobs (
+PEOPLE) 
+Sentence:   Loading ... Loading ... Loading ... Working ... Loading ... Loading ... Working ... Loading ... Load
+ing ... Loading ... June 17 -- Microsoft co-founder Bill Gates thinks that the company 's $ 26.2 billion acquisi
+tion of LinkedIn is a great transaction and that the two companies will have a lot of synergies together .
+Relation type: Work_For | Confidence: 0.48466115883664407 | Entity #1: Jobs (PEOPLE)  | Entity #2: Apple (ORGANI
+ZATION) 
+Sentence:   Loading ... Loading ... Loading ... Working ... Loading ... Loading ... Working ... Loading ... Load
+ing ... Loading ... June 17 -- Microsoft co-founder Bill Gates thinks that the company 's $ 26.2 billion acquisi
+tion of LinkedIn is a great transaction and that the two companies will have a lot of synergies together .
+Relation type: Work_For | Confidence: 0.49666831723341304 | Entity #1: Gates (PEOPLE)  | Entity #2: Google (ORGA
+NIZATION) 
+Sentence:   Loading ... Loading ... Loading ... Working ... Loading ... Loading ... Working ... Loading ... Load
+ing ... Loading ... June 17 -- Microsoft co-founder Bill Gates thinks that the company 's $ 26.2 billion acquisi
+tion of LinkedIn is a great transaction and that the two companies will have a lot of synergies together .
+Relation type: Work_For | Confidence: 0.49666831723341304 | Entity #1: Gates (PEOPLE)  | Entity #2: Google (ORGA
+NIZATION) 
