@@ -1,56 +1,26 @@
 a) Project 1 Group 13
 
-b)
-README.md
-transcript.txt
-search.py
-stopWords.txt
+b) README.md transcript.txt ise.py <NAME OF NLP DIRECTORY HERE
 
-c)
-pip install -U google-api-python-client
-python search.py AIzaSyBbGfil_xv2ICSW4xjT5RYY92l96nahFEs 007382945159574133954:avqdfgjg420 <precision> <query>
-The stopWords file must be in the same directory or otherwise accessible to the script
+c) python <r> <t> <q> <k>
+(r,t,q,k are the same as in the reference implementation)
+<r> is an integer between 1 and 4, indicating the relation to extract: 1 is for Live_In, 2 is for Located_In, 3 is for OrgBased_In, and 4 is for Work_For
+<t> is a real number between 0 and 1, indicating the "extraction confidence threshold," which is the minimum extraction confidence that we request for the tuples in the output
+<q> is a "seed query," which is a list of words in double quotes corresponding to a plausible tuple for the relation to extract (e.g., "bill gates microsoft" for relation Work_For)
+<k> is an integer greater than 0, indicating the number of tuples that we request in the output
 
-Precision needs to be a float and query needs to be in quotes if it is more than one word.
-We use python 2.
-
-d) 
-Organization:
-We divide the code between a main function and multiple helper functions.
-The main function is responsible for the main workflow, handling all user input, and making decisions. 
-We use various helper funcitons to assist with the processisng of results.
-
-Workflow:
-First we get the top 10 search results from google.
-Then we print each result one by one and we collect input from the user on whether it is relevant or not.
-The titles and summaries of all the relevant results are added to lists that are then passed to the mostCommon() method.
-The mostCommon() method returns the two most frequently appearing words in the titles and summaries (that are not a part of the query already) and those two words are added to the query.
-After the new words are added to the query, the query is reordered.
-We retrieve the top 10 search results for the new query...and the process repeats until we reach the desired precision.
+d) Steps:
+-get the top 10 search results from google for query q
+-for each url that we have not seen before, retrieve the webpage, extract the plaintext and split the plaintext into a list of sentences
+-send the list of sentences through pipeline1 -> the output is a subset of the input
+-send the outputted list of sentences through pipeline2 and the relation extraction, sentence by sentence
+-
 
 e)
-
-First we remove stopwords, html tags, and special characters from the titles and summaries of the links that are marked relevant.
-Then we find the two most frequently appearing words in the titles and summaries that are not part of the query already and we add them to the query.
-After the new words are added to the query, we reorder the query.
-We do this in a method where we create a list of all possible pairings of the words in the query and then sort the list by how frequently that pairing occurs in a string that is a concatenation of all the relevant titles and summaries.
-We add each word in the most frequent pairings to a new list of query terms.
-We add any words that were not part of the most frequent pairings but are part of the query to the new query list.
-The method returns the new query so it can be passed to the google api.
-
-ex:
-query is 'brin'
-new words are 'sergey', 'google'
-most frequent pairings are ('sergey', 'brin'), ('brin', 'sergey'), ('google', 'brin'), ('brin', 'google')
-We add the words 'sergey', 'brin', 'google' to the new query variable.
-We did not overlook any words that were present in the original query so now we return the reordered query.
 
 f)
 Search engine API key: AIzaSyBbGfil_xv2ICSW4xjT5RYY92l96nahFEs
 Engine ID: 007382945159574133954:avqdfgjg420
+We hardcoded the API key and engine ID into our program though so you don't need this info.
 
-
-g) Used these resources to learn how to find word frequency
-https://programminghistorian.org/lessons/counting-frequencies
-http://mcsp.wartburg.edu/zelle/python/ppics1/code/chapter11/wordfreq.py
-
+g)
